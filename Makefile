@@ -11,8 +11,8 @@ FILES = manifest.json \
 
 ADDON = android-pdfjs
 
-VERSION = $(shell sed -n  's/^  "version": "\([^"]\+\).*/\1/p' manifest.json)
-PDFJS_VERSION = 2.14.305
+VERSION = $(shell jq -r .version < manifest.json)
+PDFJS_VERSION = 2.16.105
 
 ANDROIDDEVICE = $(shell adb devices | cut -s -d$$'\t' -f1 | head -n1)
 

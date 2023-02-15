@@ -1,15 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Android PDF.js",
-  "version": "2.5.0",
+  "name": "Android PDF.js Incognito",
+  "version": "2.5.1",
   "description": "Opens PDF files on Firefox for Android using PDF.js.",
-
-  "applications": {
-    "gecko": {
-      "id": "{7a4b4ee5-e5af-4a20-b179-d42ec510f3e8}",
-      "strict_min_version": "70.0"
-    }
-  },
 
   "icons": {
     "128": "icon.svg",
@@ -35,6 +28,5 @@
     "content/web/viewer.css",
     "content/web/locale/*",
     "content/web/cmaps/*"
-  ],
-  "incognito": "not_allowed"
+  ]
 }
